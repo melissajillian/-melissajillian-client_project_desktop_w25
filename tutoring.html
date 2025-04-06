@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tutoring & Academic Support</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#main" class="skip-link">Skip to Main Content</a>
+            <a href="index.html">
+                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" class="logo">
+            </a>
+            <nav class="navigation">
+                <ul class="nav-links">
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "advising.html">Academic Advising</a></li>
+                    <li><a href = "caps.html">CAPS</a></li>
+                    <li class="active"><a href = "tutoring.html">Tutoring Support</a></li>
+                </ul>
+             </nav>
+        </div>
+    </header>
+<main id="main">
+    <h1 class="page-title">Tutoring and Academic Support</h1>
+    <section class="welcome-section">
+        <img src="images/two-students-tutoring.jpg" alt="two students sitting at a table with diagrams in their hands and a computer in front of them" class="advising-image">
+        <h2 class="section-title">Welcome!</h2>
+        <p> The Academic Success Team at UMSI is dedicated to supporting students inside and outside of the classroom.
+            This site is dedicated to connecting students to tutoring and academic support resources. Resources covered on this site include:</p>
+        <ul class="resource-list">
+            <li>UMSI Peer Tutoring</li>
+            <li>Programming Peer Tutoring</li>
+            <li>Math Peer Tutoring</li>
+            <li>Additional Support Resources</li>
+            <li>Peer-to-Peer Tutoring</li>
+        </ul>
+    </section>
+    <section class="UMSI-Peer-section">
+        <h2 class="section-title">UMSI Peer Tutoring Program</h2>
+        <p>In partnership with our UMSI faculty, the UMSI Peer Tutoring program is an opportunity for UMSI students and students taking
+            UMSI courses to engage with peer tutors and receive assistance and support in UMSI courses.</p>
+            <p>For more information regarding student support and tutoring, please email: umsi.academicsuccess@umich.edu</p>
+    </section>
+    <!-- I got help from w3Schools on how to embed YouTube videos into my site -->
+    <h2 class="section-title">Video Guides</h2>
+        <div class="video-gallery">
+            <iframe class="survivalguide-video" width="420" height="315" src="https://www.youtube.com/embed/EnMutbeoS_w" title="how to achieve academic success" tabindex="0"></iframe> <!-- Needed a title because when I didn't have any, I was getting errors when running aXe -->
+            <iframe class="ai-video" width="420" height="315" src="https://www.youtube.com/embed/89D6phLTpTw" title="how faculty and instructors at the University of Michigan can create an AI tutor for any Canvas course" tabindex="0"></iframe>
+            <iframe class="teach-video" width="420" height="315" src="https://www.youtube.com/embed/epKnXZlTMmc" title="to help people with technology, it's actually far better to teach them to become technology producers" tabindex="0"></iframe>
+            <iframe class="ace-video" width="420" height="315" src="https://www.youtube.com/embed/s1TSqTftVYg" title="how to ace your classes at the university of michigan" tabindex="0"></iframe>
+        </div>
+</main>
+<footer class="site-footer">
+    <p><a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+    <p>Contact: umsi.advising.msi@umich.edu</p>
+    <p>Leinweber Computer Science and<br>
+        Information Building (LCSIB)</p>
+    <p>200 Hayward Street,<br>
+        Ann Arbor, MI 48109</p>
+    <p>© Copyrights <span id="year"></span> by Melissa Walters. All rights reserved.</p> <!-- help from codexworld.com and the in-class exercise -->
+</footer>
+</body>
+<script>
+    // got help from codexworld.com and the in-class exercise
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+
+    // Video Gallery styling - I got help from YouTube
+    let gallery = document.querySelector(".video-gallery");
+    gallery.addEventListener("wheel", function(e) {
+
+        if (e.key == "ArrowLeft") {
+            gallery.scrollBy({left: -200, behavior: "smooth" });  // Scroll left by 200px
+        }
+        if (e.key == "ArrowRight") {
+            gallery.scrollBy({left: 200, behavior: "smooth" });  // Scroll right by 200px
+        }
+    });
+</script>
+</script>
+</html>

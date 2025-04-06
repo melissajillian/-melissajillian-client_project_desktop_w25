@@ -1,0 +1,526 @@
+/* default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif; /* changed the default to Montserrat for all body unless specified*/
+    line-height: 1.6;
+    color: #000000;
+    background-color: #ffffff;
+    margin-top: 50px; /* Adjust for header */
+}
+
+/* Header styling */
+header {
+    display: grid; /* the header is a grid */
+    grid-template-columns: 1fr;
+    background-color: #00274C; /* UM blue */
+    color: #ffffff; /* text color */
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 10px;
+    width: 100%; /* takes up full available width of its parent element */
+}
+
+/* Logo styling */
+.logo {
+    display: block; /* visible */
+    visibility: visible;
+    z-index: 9999;
+    min-width: 100px; /* won't get any smaller than this */
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* navigation styling */
+.navgation {
+    display: block;
+    text-align: center;
+    width: 100%; /* takes up full available width of its parent element */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px; /* sized for readability */
+    padding: 10px 0;
+}
+
+/* when the link is hovered over, this is what it will look like */
+.nav-links a:hover {
+    text-decoration: none;
+    background-color: #FFCB05; /* Highlight on hover with the yellow color (on brand) */
+    color: #000000;
+    border-radius: 5px; /* Optional: round the corners on hover */
+}
+
+/* when the link is active, this is what it will look like */
+.active{
+    display: block;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/* page title styling */
+.page-title {
+    font-size: 2.5em; /* sized for readability */
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #00274C;
+}
+
+/* skip menu styling so that it is not visible */
+.skip-link {
+    position: absolute;
+    top: -10000px;
+    left: 0;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* only visible when pressing tab, then it gets into position */
+.skip-link:focus {
+    top: 0;
+    left: 0;
+    text-decoration: underline;
+}
+
+/* for quick and resource links styling */
+.quick-links, .resource-links {
+    margin: 20px 0;
+    font-size: 1em; /* sized for readability */
+    list-style: none; /* no styling when just viewing */
+}
+
+.quick-links li, .resource-links li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.resource-links a {
+    text-decoration: none;
+}
+ /* when mouse hovers over, there is an underline */
+.resource-links a:hover {
+    text-decoration: underline;
+}
+
+/* advising image styling */
+.advising-images{
+    width: 100%; /* takes up full available width of its parent element */
+    max-width: 500px; /* image can only get this big */
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px; /* curved corners */
+}
+
+/* advising link styling */
+.advising-links a{
+    text-decoration: none;
+}
+
+/* when mouse hovers over these links, they are underlined */
+.advising-links a:hover{
+    text-decoration: underline;
+}
+
+.advising-links{
+    list-style: none; /* no styling when viewing page */
+    display: grid; /* links put in a grid */
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    align-content: center;
+    align-items: center;
+    font-size: 1em; /* sized for readability */
+    border: #00274C solid 2px; /* blue = on brand */
+    border-radius: 8px;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* quick links styling */
+.quick-links{
+    display: grid; /* they are in a grid */
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    align-items: center;
+    font-size: 1em; /* sized for readability */
+    border: #00274C solid 2px; /* blue = on brand */
+    border-radius: 8px; /* curved corners */
+    padding: 10px; /* padding around box */
+    width: 100%; /* takes up full available width of its parent element */
+}
+
+.quick-links a{
+    text-decoration: none;
+}
+
+.quick-links a:hover{
+    text-decoration: underline;
+}
+
+/* other resources link styling */
+.other-resources-links{
+    list-style: none;
+}
+
+.other-resources-links a{
+    text-decoration: none;
+}
+
+/* when hovered over them, they are underlined */
+.other-resources-links a:hover{
+    text-decoration: underline;
+}
+
+/* our services links styling */
+.our-services-links{
+    display: grid; /* they are in a grid */
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    border: #00274C solid 2px; /* blue = on brand */
+    border-radius: 8px; /* curved corners */
+    padding: 10px; /* padding around box */
+}
+
+.our-services-links a{
+    text-decoration: none;
+}
+
+/* when hovered over, they are underlined */
+.our-services-links a:hover{
+    text-decoration: underline;
+}
+
+/* CAPS Image Styling */
+.caps-image {
+    width: 100%; /* takes up full available width of its parent element */
+    max-width: 500px; /* can only get this big */
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px; /* curved corners */
+}
+
+.caps_furniture{
+    width: 100%; /* takes up full available width of its parent element */
+    max-width: 500px; /* can only get this big */
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px; /* curved corners */
+}
+
+.advising-image{
+    width: 100%; /* takes up full available width of its parent element */
+    max-width: 500px; /* can only get this big */
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px; /* how curved the border is */
+}
+
+/* Main content */
+main {
+    max-width: 100%; /* takes up full available width of its parent element */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: white;
+}
+
+/* section styling */
+section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: #00274d; /* blue = on brand */
+    font-size: 2em; /* readability */
+    border-bottom: 3px solid #FFCB05; /* U-M maize = on brand */
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* h3 styling */
+h3 {
+    color: #003b5c; /* Darker blue for subheadings */
+    font-size: 1.3em; /* Slightly larger font size for readability */
+    margin-top: 15px;
+}
+
+/* paragraph styling */
+p {
+    font-size: 1em; /* sized for readability */
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* unordered list styling */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1em; /* sized for readability */
+}
+
+/* resource list styling */
+.resource-list{
+    list-style: decimal; /* no decoration such as bullet points */
+    font-size: 1em; /* sized for readability */
+    display: grid; /* they are in a grid */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 10px;
+}
+
+/* data section styling */
+.data {
+    margin-bottom: 20px;
+}
+
+/* health building styling */
+.building-image {
+    width: 100%; /* takes up full available width of its parent element */
+    height: auto;
+    border-radius: 8px; /* curved corners */
+}
+
+/* caption of the health building styling */
+figcaption {
+    font-style: italic;
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 0.7em; /* sized for readability */
+}
+
+/* umsi image styling */
+.umsi-image {
+    width: 100%; /* takes up full available width of its parent element */
+    height: auto;
+    border-radius: 8px; /* curved corners */
+}
+
+ /* umsi logo styling on 404 page  */
+.umsilogo {
+    width: 100%; /* takes up full available width of its parent element */
+    max-width: 75px; /* max-width in can hit so it is not too big */
+    height: auto;
+}
+
+ /* button styling on 404 page  */
+.button {
+    display: inline-block; /* Makes the link behave like a block element (to make a button out of it) */
+    padding: 10px; /* Adjusted padding for the button size */
+    background-color: #FFCB05; /* Background color is UM maize like the buttons on the site */
+    color: #00274C; /* Text color is UM blue to match the buttons on the site */
+    text-decoration: none; /* Removes the default underline */
+    font-weight: bold; /* Makes text bold like the wite */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centers the text */
+}
+
+.button:hover {
+    background-color: #00274C; /* Dark blue background when hovered over like the buttons on the site */
+    color: #FFCB05; /* Changes the text color to yellow when hovered over like the buttons on the site */
+    text-decoration: none; /* No underline on hover */
+}
+
+/* Footer styling */
+.site-footer {
+    background-color: #00274C; /* blue = on brand */
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+}
+
+.site-footer a {
+    color: #FFCB05; /* UM maize = on brand */
+    text-decoration: none;
+}
+
+ /* when footer link is hovered over it is underlined and bold */
+.site-footer a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+@media  (min-width: 1000px) { /* break point is 1000 as I didn't want to make it too big or too small - happy medium */
+
+    /* Header styling */
+    .header-container {
+        display: flex; /* Flexbox. Switched from grid because I wanted it horizontally across the top and it was easier to do with flex */
+        justify-content: space-between; /* Distributes the space between */
+        align-items: center; /* Vertically centers the content */
+        background-color: #00274C;
+        color: #ffffff;
+        padding: 20px;
+    }
+
+    /* Logo styling */
+    .logo {
+        min-width: 75px; /* Set a minimum width for the logo as it was too big previously */
+        max-width: 75px; /* Set a maximum width for the logo as it was too big previously*/
+        height: auto;
+        display: block;
+    }
+
+    /* Navigation styling */
+    .navgation {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* layout for navigation links */
+    .nav-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex; /* Changed to flexbox for the horizontal layout I wanted */
+        justify-content: center; /* Centers the items horizontally */
+    }
+
+    /* Styling for each list item */
+    .nav-links li {
+        margin: 0 15px; /* Add horizontal spacing between each of the list items */
+    }
+
+    .nav-links a{
+        font-size: 1em; /* changed size for readability */
+    }
+
+    .page-title {
+        font-size: 2em; /* changed size for readability */
+    }
+
+    .section-title {
+        font-size: 1.6em; /* changed size for readability */
+    }
+
+    /* other resource links and resource links button styling - got help from w3schools */
+    .other-resources-links, .resource-links {
+        display: flex; /* I changed from grid to flex because it can make the items align in a row easier (for me)*/
+        justify-content: flex-start; /* Align the buttons to the left - where typography starts so it's lined up */
+        gap: 5px; /* Add space between the buttons */
+        list-style: none; /* Removes the list styling */
+        padding: 0; /* Removes padding */
+        margin: 0; /* Removes margin */
+    }
+
+    .resource-links li {
+        padding-left: 0; /* Removes the padding from above - interfering */
+        margin-bottom: 0; /* Removes the margin from above - interfering */
+    }
+
+    /* Button styling - got help from w3schools */
+    .other-resources-links a, .resource-links a {
+        display: inline-block; /* Make the link act like a block for button styling */
+        padding: 10px 20px; /* padding */
+        background-color: #FFCB05; /* Maize background color for the button */
+        color: #00274C; /* Text color = UM  blue */
+        text-decoration: none; /* Removes underline from the link */
+        font-weight: bold; /* Makes text bold */
+        border-radius: 5px; /* Round corners of the button */
+        margin-right: 5px; /* Ensures space between buttons */
+    }
+
+    /* Hover effect styling */
+    .other-resources-links a:hover, .resource-links a:hover {
+        background-color: #00274C; /* Changes - UM blue background when user hovers over it */
+        color: #FFCB05; /* Changes the text color to Maize */
+        text-decoration: none; /* No underline when hovered */
+    }
+
+    /* caption of the health building styling */
+    figcaption {
+        font-size: 0.8em; /* resized for better readability */
+    }
+
+    /* Our services links styling */
+    .our-services-links, .advising-links, .quick-links {
+        display: grid; /* Uses grid layout */
+        grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+        justify-items: stretch; /* Stretches buttons to take full width of the column */
+        gap: 10px; /* Space between buttons */
+        border: none; /* to get rid of the border */
+    }
+
+    /* Button-like styling for links - got help from w3schools */
+    .our-services-links a, .advising-links a, .quick-links a {
+        display: block; /* Make the link act like a block for button styling */
+        padding: 10px 20px;
+        background-color: #FFCB05; /* Maize background color for the button */
+        color: #00274C; /* Text color = UM  blue */
+        text-decoration: none; /* Removes underline from links */
+        font-weight: bold; /* Makes text bold */
+        text-align: center; /* Centers text inside the button */
+    }
+
+    /* Hover effect for the buttons */
+    .our-services-links a:hover, .advising-links a:hover, .quick-links a:hover {
+        background-color: #00274C; /* Changes - UM blue background when user hovers over it */
+        color: #FFCB05; /* Changes the text color to Maize */
+        text-decoration: none; /* No underline when hovered */
+    }
+
+    /* Focus styling */
+    .our-services-links a:focus, .advising-links a:focus, .quick-links a:focus, .other-resources-links a:focus, .resource-links a:focus {
+        outline: 3px solid #FFCB05; /* Highlights the button with maize outline on focus */
+    }
+
+    /* Above styling was interfering with spacing and aligning so I had to make them 0px */
+    .our-services-links li {
+        margin-bottom: 0px;
+        padding-left: 0px;
+    }
+
+    .quick-links li {
+        margin-bottom: 0px;
+        padding-left: 0px;
+    }
+
+    .advising-links {
+        margin-bottom: 0px;
+        padding-left: 0px;
+    }
+
+    /* Video Gallery styling - I got help from w3Schools as well as YouTube */
+    .video-gallery {
+        display: flex;  /* Display is flex */
+        flex-direction: row;  /* I wanted the videos lined in a row */
+        padding: 20px 5%;
+        overflow: auto; /* horizontal overflow - auto means it adds a horizontal scrollbar if the content overflows the width of the container */
+        scroll-snap-type: x mandatory; /* Enables horizontal scroll snapping */
+        gap: 16px; /* Spacing between the videos */
+        scroll-behavior: smooth; /* Ensures smooth scrolling when navigating through the gallery */
+    }
+}

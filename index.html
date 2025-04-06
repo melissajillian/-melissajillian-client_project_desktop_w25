@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Student Success Portal</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#main" class="skip-link">Skip to Main Content</a>
+            <a href="index.html">
+                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" class="logo">
+            </a>
+            <nav class="navigation">
+                <ul class="nav-links">
+                    <li class="active"><a href = "index.html">Home</a></li>
+                    <li><a href = "advising.html">Academic Advising</a></li>
+                    <li><a href = "caps.html">CAPS</a></li>
+                    <li><a href = "tutoring.html">Tutoring Support</a></li>
+                </ul>
+             </nav>
+        </div>
+    </header>
+    <main id="main">
+        <h1 class="page-title">Student Success Portal</h1>
+        <section class="welcome-section">
+            <h2 class="section-title">Welcome to the UM Grad Success Navigator</h2>
+            <h3> Your Comprehensive Guide to Resources for Graduate School Success</h3>
+            <p>This guide is set up to help you be successul inside and outside of the classroom and we have included the following resources throughout our site:</p>
+            <ul class="resource-list">
+                <li>Academic Resources</li>
+                <li>Physical Health</li>
+                <li>Mental Health</li>
+                <li>Life Outside Classroom</li>
+                <li>Contact</li>
+            </ul>
+            <!-- I got help from w3Schools on how to embed YouTube videos into my site -->
+            <h3>Video Guides</h3>
+            <div class="video-gallery">
+                <iframe class="resource-video" width="420" height="315" src="https://www.youtube.com/embed/A6KW5P25OHk" title="A guide to academic resources at the University of Michigan from a fellow student" tabindex="0"></iframe> <!-- Needed a title because when I didn't have any, I was getting errors when running aXe -->
+                <iframe class="physicalhealth-video" width="420" height="315" src="https://www.youtube.com/embed/-X9qL-75uAU" title="preview of the physcial health care at the university of mcichigan" tabindex="0"></iframe>
+                <iframe class="mentalhealth-video" width="420" height="315" src="https://www.youtube.com/embed/004uvEEaLFg" title="a path to improvement in regard to your mental health" tabindex="0"></iframe>
+                <iframe class="life-video" width="420" height="315" src="https://www.youtube.com/embed/todiI6IyVio" title="A day in the life of a student here at the University Of Michigan" tabindex="0"></iframe>
+                <iframe class="contact-video" width="420" height="315" src="https://www.youtube.com/embed/LGj7NIPa19I" title="Connecting with UMSI and their programs" tabindex="0"></iframe>
+            </div>
+        </section>
+        <section class="physical-health">
+            <h2 class="section-title">Physical Health</h2>
+            <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
+            <article class="data">
+                <h3>Recreational Sports</h3>
+                <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
+            </article>
+            <article class="data">
+                <h3>University Health Service (UHS)</h3>
+                <figure>
+                    <img src="images/UHS.jpg" alt="University Health Services building" class="building-image">
+                    <figcaption>University Health Services Building</figcaption>
+                </figure>
+                <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
+            </article>
+        </section>
+
+        <section class="mental-health">
+            <h2 class="section-title">Mental Health</h2>
+            <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
+            <article class="data">
+                <h3>Counseling and Psychological Services (CAPS):</h3>
+                <p> Access individual counseling, group therapy, workshops, and crisis intervention services.</p>
+            </article>
+            <article class="data">
+                <h3>Wellness Coaching:</h3>
+                <p>Work with a wellness coach to develop strategies for managing stress, time, and overall well-being.</p>
+            </article>
+            <article class="data">
+                <h3>Mindfulness Resources:</h3>
+                <p> Participate in mindfulness and meditation sessions to cultivate a calm and focused mind.</p>
+            </article>
+            <article class="data">
+                <h3>Support Groups:</h3>
+                <p> Join peer support groups for shared experiences and collective coping strategies.</p>
+            </article>
+        </section>
+
+
+        <section class="life-outside-classroom">
+            <h2 class="section-title">Life Outside the Classroom</h2>
+            <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
+            <ul class="loc-resources">
+                <li><strong>Student Organizations:</strong> Join one of the many student organizations to connect with peers who share your interests and passions.</li>
+                <li><strong>Arts and Culture:</strong> Explore UM's vibrant arts scene with events, exhibitions, and performances happening year-round.</li>
+                <li><strong>Career Services:</strong> Utilize career counseling, job search resources, and networking opportunities to prepare for your professional future.</li>
+                <li><strong>Community Engagement:</strong> Get involved with local volunteering opportunities and community service projects to make a positive impact.</li>
+                <li><strong>Housing and Dining:</strong> Find information on on-campus housing options and dining services to ensure a comfortable living experience.</li>
+            </ul>
+        </section>
+
+        <img src="images/UMSI.png" alt="UMSI logo in th center with four different pictures surounding it." class="umsi-image">
+
+    </main>
+    <footer class="site-footer">
+        <p><a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+        <p>Contact: umsi.advising.msi@umich.edu</p>
+        <p>Leinweber Computer Science and<br>
+            Information Building (LCSIB)</p>
+        <p>200 Hayward Street,<br>
+            Ann Arbor, MI 48109</p>
+        <p>© Copyrights <span id="year"></span> by Melissa Walters. All rights reserved.</p> <!-- // help from codexworld.com and the in-class exercise -->
+    </footer>
+</body>
+<script>
+    // got help from codexworld.com and the in-class exercise
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+
+    // Video Gallery styling - I got help from YouTube
+    let gallery = document.querySelector(".video-gallery");
+    gallery.addEventListener("wheel", function(e) {
+
+        if (e.key == "ArrowLeft") {
+            gallery.scrollBy({left: -200, behavior: 'smooth' });  // Scroll left by 200px
+        }
+        if (e.key == "ArrowRight") {
+            gallery.scrollBy({left: 200, behavior: 'smooth' });  // Scroll right by 200px
+        }
+    });
+</script>
+</html>
