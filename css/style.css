@@ -342,7 +342,7 @@ figcaption {
     background-color: #FFCB05; /* Background color is UM maize like the buttons on the site */
     color: #00274C; /* Text color is UM blue to match the buttons on the site */
     text-decoration: none; /* Removes the default underline */
-    font-weight: bold; /* Makes text bold like the wite */
+    font-weight: bold; /* Makes text bold like the site */
     border-radius: 5px; /* Rounded corners */
     text-align: center; /* Centers the text */
 }
@@ -429,7 +429,7 @@ figcaption {
     /* other resource links and resource links button styling - got help from w3schools */
     .other-resources-links, .resource-links {
         display: flex; /* I changed from grid to flex because it can make the items align in a row easier (for me)*/
-        justify-content: flex-start; /* Align the buttons to the left - where typography starts so it's lined up */
+        justify-content: flex-start; /* Align the buttons to the left - where the rest of the typography starts so it's lined up */
         gap: 5px; /* Add space between the buttons */
         list-style: none; /* Removes the list styling */
         padding: 0; /* Removes padding */
@@ -494,7 +494,7 @@ figcaption {
 
     /* Focus styling */
     .our-services-links a:focus, .advising-links a:focus, .quick-links a:focus, .other-resources-links a:focus, .resource-links a:focus {
-        outline: 3px solid #FFCB05; /* Highlights the button with maize outline on focus */
+        outline: 3px solid #00274C; /* Highlights the button with maize outline on focus */
     }
 
     /* Above styling was interfering with spacing and aligning so I had to make them 0px */
